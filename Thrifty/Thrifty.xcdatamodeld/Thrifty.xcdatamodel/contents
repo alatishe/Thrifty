@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Transaction" representedClassName="TransactionMO" syncable="YES">
+    <entity name="Expense" representedClassName="ExpenseMO" syncable="YES">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="daysCycle" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="descr" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="spentBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="spends" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Goal" representedClassName="GoalMO" syncable="YES">
         <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="amountSoFar" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="category" attributeType="String" syncable="YES"/>
+        <attribute name="completed" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="daysCycle" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="descr" attributeType="String" syncable="YES"/>
-        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="wantedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="wants" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Income" representedClassName="IncomeMO" syncable="YES">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="daysCycle" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="descr" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" attributeType="String" syncable="YES"/>
-        <relationship name="owner" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="transactions" inverseEntity="User" syncable="YES"/>
+        <relationship name="receivedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="receives" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName="UserMO" syncable="YES">
-        <attribute name="isActive" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <attribute name="savingCoeff" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="setUpCompleted" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="owner" inverseEntity="Transaction" syncable="YES"/>
+        <relationship name="receives" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Income" inverseName="receivedBy" inverseEntity="Income" syncable="YES"/>
+        <relationship name="spends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="spentBy" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="wants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Goal" inverseName="wantedBy" inverseEntity="Goal" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Transaction" positionX="-45" positionY="-61" width="128" height="180"/>
-        <element name="User" positionX="-272" positionY="27" width="128" height="120"/>
+        <element name="Expense" positionX="-11" positionY="144" width="128" height="148"/>
+        <element name="Goal" positionX="-72" positionY="-189" width="128" height="163"/>
+        <element name="Income" positionX="-9" positionY="-18" width="128" height="148"/>
+        <element name="User" positionX="-272" positionY="27" width="128" height="103"/>
     </elements>
 </model>

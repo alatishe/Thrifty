@@ -11,18 +11,13 @@ import CoreData
 
 class BudgetViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
-    
-    
+    var expenseInfo : ExpenseMO!
     var myInfo : UserMO!
     var fetchResultsController : NSFetchedResultsController<UserMO>!
-    
-    let periods: [String: Int] = ["Daily": 1, "Monthly": 30, "Yearly": 365]
-    var period = "Monthly"
     
     @IBOutlet weak var incomeButton: UIButton!
     @IBOutlet weak var expButton: UIButton!
     @IBOutlet weak var savingsButton: UIButton!
-    @IBOutlet weak var availableField: UILabel!
     
     
     
@@ -32,18 +27,18 @@ class BudgetViewController: UIViewController, NSFetchedResultsControllerDelegate
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        loadData()
-        updateDisplay()
-//        if !myInfo.setUpCompleted {
-//            let AddTypeVC = UIStoryboard(name: "Setup", bundle: nil).instantiateViewController(withIdentifier: "BeginSetup")
-//            
-//            
-//            present(AddTypeVC, animated: false, completion: nil)
-//        }
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
-       
+        if !UserMO.userWithNameExists("default", inMOContext: getContext()) {
+            let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstTimeSetup")
+            present(viewController, animated: true, completion: nil)
+        }
+        else {
+            loadData()
+            updateDisplay()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,22 +49,23 @@ class BudgetViewController: UIViewController, NSFetchedResultsControllerDelegate
     
     
     @IBAction func setIncomeClicked(_ sender: UIButton) {
-        let viewController = UIStoryboard(name: "Setup", bundle: nil).instantiateViewController(withIdentifier: "SetTransactions") as! TransactionContainer
-        viewController.initType = TransactionMO.type.income
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SetRecInc") as! IncomeTableController
+//        viewController.myInfo = userInfo(self.myInfo)
         present(viewController, animated: true, completion: nil)
         
     }
     
     @IBAction func setExpClicked(_ sender: UIButton) {
-        let viewController = UIStoryboard(name: "Setup", bundle: nil).instantiateViewController(withIdentifier: "SetTransactions") as! TransactionContainer
-        viewController.initType = TransactionMO.type.expense
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SetRecExp") as! ExpenseTableController
+//        viewController.myInfo = userInfo(self.myInfo)
         present(viewController, animated: true, completion: nil)
         
-//        
+        
     }
     
     @IBAction func setSavingsClicked(_ sender: UIButton) {
-        let viewController = UIStoryboard(name: "Setup", bundle: nil).instantiateViewController(withIdentifier: "SetSavings") as! SetSavingsViewController
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SetSavings") as! SetSavingsViewController
+//        viewController.myInfo = userInfo(self.myInfo)
         present(viewController, animated: true, completion: nil)
         
     }
@@ -77,29 +73,54 @@ class BudgetViewController: UIViewController, NSFetchedResultsControllerDelegate
     func updateDisplay() {
         if myInfo != nil {
             
-            let income = myInfo.sumOfAvgRecurringIncomesFor(numberOfDays: 30)
-            let expense = myInfo.sumOfAvgRecurringExpensesFor(numberOfDays: 30)
-            let savings = myInfo.sumOfAvgSavingsFor(numberOfDays: 30)
             
             
-            incomeButton.setTitle(String(format: "$%.2f", income), for: UIControlState.normal)
-            expButton.setTitle(String(format: "$%.2f", expense), for: UIControlState.normal)
-            savingsButton.setTitle(String(format: "$%.2f", savings), for: UIControlState.normal)
-            
-            availableField.text = String(format: "$%.2f", income + expense + savings)
+            incomeButton.setTitle(String(format: "$%.2f", sumOfIncomes()!), for: UIControlState.normal)
+            expButton.setTitle(String(format: "$%.2f", sumOfExpenses()!), for: UIControlState.normal)
+            savingsButton.setTitle(String(format: "$%.2f", sumOfSavings()!), for: UIControlState.normal)
         }
     }
     
- 
     
+    func sumOfIncomes() -> Double? {
+        if myInfo.receives != nil {
+            var incomes: Double = 0.0
+            for income in myInfo.receives! {
+                incomes += (income as! IncomeMO).amount
+            }
+            return incomes
+        }
+        else {
+            return nil
+        }
+    }
     
+    func sumOfExpenses() -> Double? {
+        if myInfo.spends != nil {
+            var expenses: Double = 0.0
+            for expense in myInfo.spends! {
+                expenses += (expense as! ExpenseMO).amount
+            }
+            return expenses
+        }
+        else {
+            return nil
+        }
+    }
     
-    
-    
-    
-    
-    
-    
+    func sumOfSavings() -> Double? {
+        if myInfo.wants != nil {
+            var goals: Double = 0.0
+            for goal in myInfo.wants! {
+                goals += (goal as! GoalMO).amount
+            }
+            return goals
+        }
+        else {
+            return nil
+        }
+    }
+
     func getContext() -> NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
@@ -107,16 +128,7 @@ class BudgetViewController: UIViewController, NSFetchedResultsControllerDelegate
     
     // Fetches data and stores it in myInfo
     func loadData() {
-        myInfo = UserMO.getActiveUser(getContext())
+        myInfo = UserMO.userWithName("default", inMOContext: getContext())
     }
-    
-    
-    
-    @IBAction func logOut(_ sender: UIBarButtonItem) {
-        UserMO.getActiveUser(getContext())!.makeInactive(getContext())
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
     
 }

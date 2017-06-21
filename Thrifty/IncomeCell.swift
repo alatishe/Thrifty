@@ -8,10 +8,11 @@
 
 import UIKit
 
-class TransactionCell: UITableViewCell {
+class IncomeCell: UITableViewCell {
 
-    
-    @IBOutlet weak var explanationField: UILabel!
+    @IBOutlet weak var nameField: UILabel!
+    @IBOutlet weak var daysPeriodField: UILabel!
+    @IBOutlet weak var amountField: UILabel!
     
     
     override func awakeFromNib() {

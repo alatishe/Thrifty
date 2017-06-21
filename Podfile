@@ -6,7 +6,17 @@ target 'Thrifty' do
   use_frameworks!
 
   # Pods for Thrifty
-  pod 'JTCalendar', '~> 2.0'
+
   pod ‘Charts'
+
+  target 'ThriftyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ThriftyUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end
