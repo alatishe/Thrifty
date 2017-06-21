@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HistoryCell: UITableViewCell {
 
@@ -28,6 +29,13 @@ class HistoryCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func getContext() -> NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
+    
+    var user : UserMO!
+    
     var transactionMO = [TransactionMO]() {
         didSet{
             if transactionMO.count > 0 {
@@ -36,8 +44,10 @@ class HistoryCell: UITableViewCell {
                 }
                 
                 lblDailyBudget.text = "Daily Budget"
-                let dailyBudgetAmount = 24.00
-                lblDailyBudgetAmount.text = "$\(dailyBudgetAmount)"
+                //fetch user from CoreData into local var user and set greeting label
+                user = UserMO.getActiveUser(getContext())
+                let budget = user.calculateDailyBudget(Date(), context: getContext())
+                lblDailyBudgetAmount.text = "$\(budget)"
                 
                 var categoryString = ""
                 var amountString = ""
@@ -64,11 +74,19 @@ class HistoryCell: UITableViewCell {
                 }
                 lblType.text = categoryString
                 lblTypeAmount.text = amountString
-                if (totalExpense - dailyBudgetAmount) < dailyBudgetAmount {
-                    lblTotal.text = "$\(totalExpense - dailyBudgetAmount)"
+                if totalExpense < budget {
+                    if budget <= 0.0 {
+                        lblTotal.text = "$\(budget + totalExpense)"
+                    } else {
+                        lblTotal.text = "$\(budget - totalExpense)"
+                    }
                     lblTotal.textColor = UIColor.green
                 } else {
-                    lblTotal.text = "-$\(totalExpense - dailyBudgetAmount)"
+                    if budget <= 0.0 {
+                        lblTotal.text = "-$\(budget + totalExpense)"
+                    } else {
+                        lblTotal.text = "-$\(totalExpense - budget)"
+                    }
                     lblTotal.textColor = UIColor.red
                 }
             }

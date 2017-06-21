@@ -652,10 +652,10 @@
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="133" id="iBz-Q6-gtl" customClass="HistoryCell" customModule="Thrifty" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="55.5" width="375" height="133"/>
+                                                <rect key="frame" x="0.0" y="56" width="375" height="133"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iBz-Q6-gtl" id="fzc-2X-5Uh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="132.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZo-uX-Nvd">
@@ -805,7 +805,9 @@
                         <outlet property="calendarContentView" destination="O7q-o1-HVi" id="Mfk-OZ-ehN"/>
                         <outlet property="calendarMenuView" destination="bdG-qf-Omk" id="34D-is-jHv"/>
                         <outlet property="changeModeButton" destination="oxG-xT-sDF" id="ugG-eU-pwe"/>
+                        <outlet property="contentViewHeightConstraint" destination="VSx-8z-OYG" id="zBG-2t-lNt"/>
                         <outlet property="tableView" destination="hm0-w3-BJ3" id="3BR-JO-n1s"/>
+                        <outlet property="weekDayHeightConstraint" destination="f3C-C4-8Vx" id="rh7-HC-GQ1"/>
                         <outlet property="weekDayView" destination="0pj-Wv-8Ue" id="n1u-Fs-RAv"/>
                     </connections>
                 </viewController>

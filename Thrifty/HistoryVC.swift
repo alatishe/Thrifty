@@ -33,9 +33,11 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
     @IBOutlet weak var weekDayView: JTCalendarWeekDayView!
     
     @IBOutlet weak var calendarContentView: JTVerticalCalendarView!
-    
-    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
 
+    @IBOutlet weak var contentViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var weekDayHeightConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var changeModeButton: UIButton!
     
     var calendarManager = JTCalendarManager()
@@ -78,7 +80,7 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Do any additional setup after loading the view.
-        
+        calendarManager.reload()
     }
     
     //MARK: - CalendarManager delegate
@@ -195,16 +197,23 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
         }
         return false
     }
+    var isMonthlySpendingView = false
     
     @IBAction func changeMode(_ sender: Any) {
-        calendarManager.settings.weekModeEnabled = !calendarManager.settings.weekModeEnabled
-        calendarManager.reload()
+//        calendarManager.settings.weekModeEnabled = !calendarManager.settings.weekModeEnabled
+//        calendarManager.reload()
         
-        var newHeight: CGFloat = 300.0
-        if calendarManager.settings.weekModeEnabled {
-            newHeight = 85.0
+        var contentViewHeight: CGFloat = 300.0
+        var weekDayHeight: CGFloat = 30.0
+        if !isMonthlySpendingView {
+            contentViewHeight = 0.0
+            weekDayHeight = 0.0
+            isMonthlySpendingView = true
+        } else {
+            isMonthlySpendingView = false
         }
-        heightConstraint.constant = newHeight
+        contentViewHeightConstraint.constant = contentViewHeight
+        weekDayHeightConstraint.constant = weekDayHeight
     }
     
     func loadData(_ date: Date) {
