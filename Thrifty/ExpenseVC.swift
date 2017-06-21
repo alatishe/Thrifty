@@ -88,7 +88,7 @@ class ExpenseVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
             if type == TransactionMO.type.expense {
                 amount = -amount
             }
-
+            
             let newExpense = TransactionInfo(daysCycle: 0,
                                              amount: amount,
                                              date: Date() as NSDate,

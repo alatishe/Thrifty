@@ -43,8 +43,10 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
     var calendarManager = JTCalendarManager()
 
     var expenseList: [TransactionMO] = [TransactionMO]()
+    var expensesDate = [NSDate]()
     
     var dateSelected = Date()
+    var isMonthlySpendingView = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,7 +112,7 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
             viewDay.circleView.backgroundColor = UIColor.red
             viewDay.dotView.backgroundColor = UIColor.white
             viewDay.textLabel.textColor = UIColor.white
-        }
+        }            
             // Other month
         else if !calendarManager.dateHelper.date(calendarContentView.date, isTheSameMonthThan: viewDay.date) {
             viewDay.circleView.isHidden = true
@@ -130,9 +132,8 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
         else{
             viewDay.dotView.isHidden = true
         }
-        
+
         if (calendarManager.dateHelper.date(calendarContentView.date, isTheSameDayThan: viewDay.date)) {
-            
             if self.calendarManager.dateHelper.date(dateSelected, isEqualMonthAndYear: viewDay.date) {
                 loadData(dateSelected)
             }
@@ -197,23 +198,26 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
         }
         return false
     }
-    var isMonthlySpendingView = false
     
     @IBAction func changeMode(_ sender: Any) {
 //        calendarManager.settings.weekModeEnabled = !calendarManager.settings.weekModeEnabled
 //        calendarManager.reload()
+        expenseList.removeAll()
         
         var contentViewHeight: CGFloat = 300.0
         var weekDayHeight: CGFloat = 30.0
         if !isMonthlySpendingView {
             contentViewHeight = 0.0
             weekDayHeight = 0.0
+            expenseList = TransactionMO.getMonthlyExpense(dateSelected as NSDate, inMOContext: getContext())!
             isMonthlySpendingView = true
         } else {
+            expenseList = TransactionMO.expenseWithDate(dateSelected, inMOContext: getContext())!
             isMonthlySpendingView = false
         }
         contentViewHeightConstraint.constant = contentViewHeight
         weekDayHeightConstraint.constant = weekDayHeight
+        self.tableView.reloadData()
     }
     
     func loadData(_ date: Date) {
@@ -228,11 +232,13 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isMonthlySpendingView {
+            return getRows()
+        }
         if expenseList.count > 0 {
             return 1
         }
         return 0
-        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -244,6 +250,14 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
         
         let historyCell = self.tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! HistoryCell
         
+        
+        if isMonthlySpendingView {
+            historyCell.headerDate = expensesDate[indexPath.row] as Date
+        } else {
+            historyCell.headerDate = nil
+        }
+        
+        
         historyCell.transactionMO = expenseList
         
         return historyCell
@@ -253,6 +267,28 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
         
     }
     
+    //MARK: OtherMethods
+    func getRows() -> Int {
+        var tempDate = Date()
+        var date: NSDate?
+        expensesDate.removeAll()
+        for expense in expenseList {
+            if let d = expense.date {
+                tempDate = d as Date
+                
+                if let tDate = date {
+                    if tempDate.getDate() as Date != (tDate as Date) as Date {
+                        date = tempDate.getDate()
+                        expensesDate.append(expense.date!)
+                    }
+                } else {
+                    date = tempDate.getDate()
+                    expensesDate.append(expense.date!)
+                }
+            }
+        }
+        return expensesDate.count
+    }
     /*
     // MARK: - Navigation
 

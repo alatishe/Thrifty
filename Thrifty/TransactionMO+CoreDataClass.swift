@@ -87,4 +87,39 @@ public class TransactionMO: NSManagedObject {
         }
         return false
     }
+    
+    
+    var endOfMonth = Date()
+    
+    
+    class func getStartDate(date: NSDate) -> NSDate {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month], from: date as Date)
+        return calendar.date(from: components)! as NSDate
+    }
+    
+    class func getLastDate(startDate: NSDate) -> NSDate {
+        var comps2 = DateComponents()
+        comps2.month = 1
+        comps2.day = -1
+        return Calendar.current.date(byAdding: comps2, to: startDate as Date)! as NSDate
+    }
+    
+    class func getMonthlyExpense(_ date: NSDate, inMOContext context: NSManagedObjectContext) -> [TransactionMO]? {
+      
+        let startDate:NSDate = TransactionMO.getStartDate(date: date)
+        let endDate:NSDate = TransactionMO.getLastDate(startDate: startDate)
+        let expense = "expense"
+        
+        // Set predicate as date being selected date
+        let request: NSFetchRequest<TransactionMO> = TransactionMO.fetchRequest()
+        
+        request.predicate = NSPredicate(format: "(date >= %@) AND (date <= %@) && type == %@",startDate, endDate,expense)
+        request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
+        
+        if let transactions = (try? context.fetch(request)) {
+            return transactions
+        }
+        return nil
+    }
 }

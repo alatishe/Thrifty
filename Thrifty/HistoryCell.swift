@@ -18,6 +18,13 @@ class HistoryCell: UITableViewCell {
     @IBOutlet weak var lblTypeAmount: UILabel!
     @IBOutlet weak var lblTotal: UILabel!
     
+    var user : UserMO!
+    var headerDate: Date?
+    
+    var categoryString = ""
+    var amountString = ""
+    var totalExpense = 0.00
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -34,14 +41,18 @@ class HistoryCell: UITableViewCell {
         return appDelegate.persistentContainer.viewContext
     }
     
-    var user : UserMO!
-    
     var transactionMO = [TransactionMO]() {
         didSet{
+            
             if transactionMO.count > 0 {
-                if let date = transactionMO[0].date as Date? {
-                    lblDate.text = date.getStringWithFormat("dd/mm/yy EEEE")
+                if let dateHeader = headerDate as Date? {
+                    lblDate.text = dateHeader.getStringWithFormat("dd/MM/yy EEEE")
+                } else {
+                    if let date = transactionMO[0].date as Date? {
+                        lblDate.text = date.getStringWithFormat("dd/MM/yy EEEE")
+                    }
                 }
+                
                 
                 lblDailyBudget.text = "Daily Budget"
                 //fetch user from CoreData into local var user and set greeting label
@@ -49,31 +60,23 @@ class HistoryCell: UITableViewCell {
                 let budget = user.calculateDailyBudget(Date(), context: getContext())
                 lblDailyBudgetAmount.text = "$\(budget)"
                 
-                var categoryString = ""
-                var amountString = ""
-                var totalExpense = 0.00
+                categoryString = ""
+                amountString = ""
+                totalExpense = 0.00
+                
                 for expense in transactionMO {
-                    if let category = expense.category {
-                        if categoryString.isEmpty {
-                            categoryString = categoryString + "\(category)"
+                    
+                    if let expenseDate = expense.date as Date? {
+                        if let dateHeader = headerDate as Date? {
+                            if dateHeader.getDate() == expenseDate.getDate() {
+                                performCategoryAndAmount(expense)
+                            }
                         } else {
-                            categoryString = categoryString + "\n\(category)"
+                            performCategoryAndAmount(expense)
                         }
                     }
-                    let aString = "\(expense.amount)"
-                    let newString = aString.replacingOccurrences(of: "-", with: "", options: .literal, range: nil)
-                    
-                    if amountString.isEmpty {
-                         amountString = amountString + "-$\(newString)"
-                    } else {
-                         amountString = amountString + "\n-$\(newString)"
-                    }
-                    if let amount = Double(newString) {
-                        totalExpense = totalExpense + amount
-                    }
                 }
-                lblType.text = categoryString
-                lblTypeAmount.text = amountString
+                
                 if totalExpense < budget {
                     if budget <= 0.0 {
                         lblTotal.text = "$\(budget + totalExpense)"
@@ -89,7 +92,33 @@ class HistoryCell: UITableViewCell {
                     }
                     lblTotal.textColor = UIColor.red
                 }
+                
+                lblType.text = categoryString
+                lblTypeAmount.text = amountString
             }
+        }
+    }
+    
+    func performCategoryAndAmount(_ expense: TransactionMO) {
+        if let category = expense.category {
+            if categoryString.isEmpty {
+                categoryString = categoryString + "\(category)"
+            } else {
+                categoryString = categoryString + "\n\(category)"
+            }
+        }
+        
+        let aString = "\(expense.amount)"
+        let newString = aString.replacingOccurrences(of: "-", with: "", options: .literal, range: nil)
+        
+        if amountString.isEmpty {
+            amountString = amountString + "-$\(newString)"
+        } else {
+            amountString = amountString + "\n-$\(newString)"
+        }
+        
+        if let amount = Double(newString) {
+            totalExpense = totalExpense + amount
         }
     }
 }

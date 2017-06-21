@@ -102,5 +102,16 @@ extension Date {
         
         return (cal as NSCalendar).components(unit, from: self, to: toDate, options: NSCalendar.Options.matchStrictly).day!
     }
+    
+    // Get Date From Date. 
+    func getDate() -> NSDate {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.timeZone = NSTimeZone(name: "GMT")! as TimeZone // this line resolved me the issue of getting one day less than the selected date
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.date(from: formatter.string(from: self))! as NSDate
+    }
 }
 
