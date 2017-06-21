@@ -2,8 +2,8 @@
 //  HistoryVC.swift
 //  Thrifty
 //
-//  Created by Lomesh Pansuriya on 16/06/17.
-//  Copyright © 2017 Lomesh Pansuriya. All rights reserved.
+//  Created by Manny Luu on 16/19/17.
+//  Copyright © 2017 DeAnza. All rights reserved.
 //
 
 import UIKit
