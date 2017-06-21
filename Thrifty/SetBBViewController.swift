@@ -13,6 +13,12 @@ class SetBBViewController: UIViewController {
 
     
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    
+    
     //Outlets
     @IBOutlet var cashField: UITextField!
 
@@ -34,16 +40,37 @@ class SetBBViewController: UIViewController {
     }
 
 
+    @IBAction func cancelPressed(_ sender: UIButton) {
+        let VC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SelectUser")
+        present(VC, animated: false, completion: nil)
+    }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let beginningBalance = IncomeInfo(id: UUID().uuidString,
-                                          type: "Beginning Balance",
-                                          descr: ".hidden",
-                                          amount: Double(cashField.text!)!,
-                                          daysCycle: 0,
-                                          date: Date() as NSDate,
-                                          receivedBy: "default")
-        print("saving" + beginningBalance.type)
-        _ = IncomeMO.incomeWithInfo(beginningBalance, inMOContext: getContext())
+        
+        var amount: Double
+        if cashField.text == ""
+        {
+            amount = 0
+        }
+        else
+        {
+           amount = Double(cashField.text!)!
+        }
+        
+        print(amount)
+        
+        let beginningBalance = TransactionInfo(daysCycle: 0,
+                                               amount: amount,
+                                               date: Date() as NSDate,
+                                               descr: ".hidden",
+                                               id: UUID().uuidString,
+                                               type: "income",
+                                               amountSoFar: amount,
+                                               category: "Beginning Balance")
+
+        
+        UserMO.getActiveUser(getContext())?.createNewTransaction(with: beginningBalance, in: getContext())
         
     }
 }

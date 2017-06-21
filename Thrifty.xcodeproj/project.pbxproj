@@ -7,397 +7,332 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33242BA41EF3D38800973D78 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33242BA31EF3D38800973D78 /* HistoryVC.swift */; };
-		33242C301EF3F63C00973D78 /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C101EF3F63C00973D78 /* JTCalendarManager.m */; };
-		33242C311EF3F63C00973D78 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C121EF3F63C00973D78 /* JTCalendarSettings.m */; };
-		33242C321EF3F63C00973D78 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C141EF3F63C00973D78 /* JTDateHelper.m */; };
-		33242C331EF3F63C00973D78 /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C171EF3F63C00973D78 /* JTCalendarDelegateManager.m */; };
-		33242C341EF3F63C00973D78 /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C191EF3F63C00973D78 /* JTCalendarScrollManager.m */; };
-		33242C351EF3F63C00973D78 /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C231EF3F63C00973D78 /* JTCalendarDayView.m */; };
-		33242C361EF3F63C00973D78 /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C251EF3F63C00973D78 /* JTCalendarMenuView.m */; };
-		33242C371EF3F63C00973D78 /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C271EF3F63C00973D78 /* JTCalendarPageView.m */; };
-		33242C381EF3F63C00973D78 /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C291EF3F63C00973D78 /* JTCalendarWeekDayView.m */; };
-		33242C391EF3F63C00973D78 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C2B1EF3F63C00973D78 /* JTCalendarWeekView.m */; };
-		33242C3A1EF3F63C00973D78 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C2D1EF3F63C00973D78 /* JTHorizontalCalendarView.m */; };
-		33242C3B1EF3F63C00973D78 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33242C2F1EF3F63C00973D78 /* JTVerticalCalendarView.m */; };
-		33242C3D1EF4023600973D78 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33242C3C1EF4023600973D78 /* HistoryCell.swift */; };
-		33242C401EF4169900973D78 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33242C3F1EF4169900973D78 /* NSDate.swift */; };
-		33242C461EF4290000973D78 /* ExtraIncomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33242C451EF4290000973D78 /* ExtraIncomeVC.swift */; };
-		33FDDF7B1EF334FE008FBD23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDF7A1EF334FE008FBD23 /* AppDelegate.swift */; };
-		33FDDF851EF334FE008FBD23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FDDF841EF334FE008FBD23 /* Assets.xcassets */; };
-		33FDDF931EF334FE008FBD23 /* ThriftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDF921EF334FE008FBD23 /* ThriftyTests.swift */; };
-		33FDDF9E1EF334FE008FBD23 /* ThriftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDF9D1EF334FE008FBD23 /* ThriftyUITests.swift */; };
-		33FDDFCD1EF335F6008FBD23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDDFAD1EF335F6008FBD23 /* LaunchScreen.storyboard */; };
-		33FDDFCE1EF335F6008FBD23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDDFAF1EF335F6008FBD23 /* Main.storyboard */; };
-		33FDDFCF1EF335F6008FBD23 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB11EF335F6008FBD23 /* AddExpenseViewController.swift */; };
-		33FDDFD01EF335F6008FBD23 /* AddIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB21EF335F6008FBD23 /* AddIncomeViewController.swift */; };
-		33FDDFD11EF335F6008FBD23 /* AnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB31EF335F6008FBD23 /* AnalysisVC.swift */; };
-		33FDDFD21EF335F6008FBD23 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB41EF335F6008FBD23 /* BudgetViewController.swift */; };
-		33FDDFD31EF335F6008FBD23 /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB51EF335F6008FBD23 /* ExpenseCell.swift */; };
-		33FDDFD41EF335F6008FBD23 /* ExpenseMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB61EF335F6008FBD23 /* ExpenseMO+CoreDataClass.swift */; };
-		33FDDFD51EF335F6008FBD23 /* ExpenseMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB71EF335F6008FBD23 /* ExpenseMO+CoreDataProperties.swift */; };
-		33FDDFD61EF335F6008FBD23 /* ExpenseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB81EF335F6008FBD23 /* ExpenseTableController.swift */; };
-		33FDDFD71EF335F6008FBD23 /* ExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFB91EF335F6008FBD23 /* ExpenseVC.swift */; };
-		33FDDFD81EF335F6008FBD23 /* FirstTimeSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFBA1EF335F6008FBD23 /* FirstTimeSetupViewController.swift */; };
-		33FDDFD91EF335F6008FBD23 /* GoalMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFBB1EF335F6008FBD23 /* GoalMO+CoreDataClass.swift */; };
-		33FDDFDA1EF335F6008FBD23 /* GoalMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFBC1EF335F6008FBD23 /* GoalMO+CoreDataProperties.swift */; };
-		33FDDFDC1EF335F6008FBD23 /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFBF1EF335F6008FBD23 /* IncomeCell.swift */; };
-		33FDDFDD1EF335F6008FBD23 /* IncomeMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFC01EF335F6008FBD23 /* IncomeMO+CoreDataClass.swift */; };
-		33FDDFDE1EF335F6008FBD23 /* IncomeMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFC11EF335F6008FBD23 /* IncomeMO+CoreDataProperties.swift */; };
-		33FDDFDF1EF335F6008FBD23 /* IncomeTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFC21EF335F6008FBD23 /* IncomeTableController.swift */; };
-		33FDDFE01EF335F6008FBD23 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFC31EF335F6008FBD23 /* MainViewController.swift */; };
-		33FDDFE11EF335F6008FBD23 /* SetBBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFC41EF335F6008FBD23 /* SetBBViewController.swift */; };
-		33FDDFE21EF335F6008FBD23 /* SetSavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFC51EF335F6008FBD23 /* SetSavingsViewController.swift */; };
-		33FDDFE31EF335F6008FBD23 /* StartingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFC61EF335F6008FBD23 /* StartingInfo.swift */; };
-		33FDDFE51EF335F6008FBD23 /* UserMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFCA1EF335F6008FBD23 /* UserMO+CoreDataClass.swift */; };
-		33FDDFE61EF335F6008FBD23 /* UserMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFCB1EF335F6008FBD23 /* UserMO+CoreDataProperties.swift */; };
-		33FDDFED1EF33737008FBD23 /* Thrifty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDFEB1EF33737008FBD23 /* Thrifty.xcdatamodeld */; };
-		91E17944B84B382864D5B6A5 /* Pods_ThriftyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A6C78CF626CE524DACF800 /* Pods_ThriftyTests.framework */; };
-		CE761DE4EB9816E121B66DCD /* Pods_ThriftyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22750B0607AC4F7BED2EA15 /* Pods_ThriftyUITests.framework */; };
-		EB334EF327D8F2C7DF5E881B /* Pods_Thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86021E49A932ED6D8BEB8B5D /* Pods_Thrifty.framework */; };
+		33AD89FD1EFA608000E13895 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD89FB1EFA608000E13895 /* HistoryCell.swift */; };
+		33AD89FE1EFA608000E13895 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD89FC1EFA608000E13895 /* HistoryVC.swift */; };
+		33AD8A231EFA61B000E13895 /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A031EFA61B000E13895 /* JTCalendarManager.m */; };
+		33AD8A241EFA61B000E13895 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A051EFA61B000E13895 /* JTCalendarSettings.m */; };
+		33AD8A251EFA61B000E13895 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A071EFA61B000E13895 /* JTDateHelper.m */; };
+		33AD8A261EFA61B000E13895 /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A0A1EFA61B000E13895 /* JTCalendarDelegateManager.m */; };
+		33AD8A271EFA61B000E13895 /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A0C1EFA61B000E13895 /* JTCalendarScrollManager.m */; };
+		33AD8A281EFA61B000E13895 /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A161EFA61B000E13895 /* JTCalendarDayView.m */; };
+		33AD8A291EFA61B000E13895 /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A181EFA61B000E13895 /* JTCalendarMenuView.m */; };
+		33AD8A2A1EFA61B000E13895 /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A1A1EFA61B000E13895 /* JTCalendarPageView.m */; };
+		33AD8A2B1EFA61B000E13895 /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A1C1EFA61B000E13895 /* JTCalendarWeekDayView.m */; };
+		33AD8A2C1EFA61B000E13895 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A1E1EFA61B000E13895 /* JTCalendarWeekView.m */; };
+		33AD8A2D1EFA61B000E13895 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A201EFA61B000E13895 /* JTHorizontalCalendarView.m */; };
+		33AD8A2E1EFA61B000E13895 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AD8A221EFA61B000E13895 /* JTVerticalCalendarView.m */; };
+		6BF90A76469703F418227E6F /* Pods_Thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A849C62ACF427A5EB362E07 /* Pods_Thrifty.framework */; };
+		E41777DB1EF8649B00364981 /* FundsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41777DA1EF8649B00364981 /* FundsTVC.swift */; };
+		E41777DE1EF86C9300364981 /* FundsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41777DC1EF864C900364981 /* FundsTVCell.swift */; };
+		E41777E01EF886B300364981 /* FundsAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41777DF1EF886B300364981 /* FundsAddVC.swift */; };
+		E41777E21EF8886B00364981 /* FundDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41777E11EF8886B00364981 /* FundDetailVC.swift */; };
+		E41777E41EF8B84600364981 /* PieTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41777E31EF8B84600364981 /* PieTableVC.swift */; };
+		E41777E61EF8B86100364981 /* LineTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41777E51EF8B86000364981 /* LineTableVC.swift */; };
+		E41D78831EEF8EBE000CC8B1 /* ExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41D78821EEF8EBE000CC8B1 /* ExpenseVC.swift */; };
+		E4C6F3DF1EF4A79900CD2C75 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6F3DE1EF4A79900CD2C75 /* NSDate.swift */; };
+		E4D96FEB1EEB15700030BF2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D96FEA1EEB15700030BF2A /* AppDelegate.swift */; };
+		E4D96FF01EEB15700030BF2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D96FEE1EEB15700030BF2A /* Main.storyboard */; };
+		E4D96FF31EEB15700030BF2A /* Thrifty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4D96FF11EEB15700030BF2A /* Thrifty.xcdatamodeld */; };
+		E4D96FF51EEB15700030BF2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D96FF41EEB15700030BF2A /* Assets.xcassets */; };
+		E4D96FF81EEB15700030BF2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D96FF61EEB15700030BF2A /* LaunchScreen.storyboard */; };
+		E4D970001EEB1AEC0030BF2A /* SetBBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D96FFF1EEB1AEC0030BF2A /* SetBBViewController.swift */; };
+		E4D970041EEB20630030BF2A /* SetSavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D970031EEB20630030BF2A /* SetSavingsViewController.swift */; };
+		E4D970061EEB210D0030BF2A /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D970051EEB210D0030BF2A /* BudgetViewController.swift */; };
+		E4D970081EEB229C0030BF2A /* StartingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D970071EEB229C0030BF2A /* StartingInfo.swift */; };
+		E4D970111EEB62660030BF2A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D970101EEB62660030BF2A /* MainViewController.swift */; };
+		E4F8A3911EF1EA3300CBCCB2 /* HistoryObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8A3901EF1EA3300CBCCB2 /* HistoryObjC.m */; };
+		E4F8A3961EF20FAB00CBCCB2 /* AnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F8A3951EF20FAB00CBCCB2 /* AnalysisVC.swift */; };
+		F61D80741EF1E8BB006B6B1D /* UserMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D806C1EF1E8BB006B6B1D /* UserMO+CoreDataClass.swift */; };
+		F61D80751EF1E8BB006B6B1D /* UserMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D806D1EF1E8BB006B6B1D /* UserMO+CoreDataProperties.swift */; };
+		F61D807B1EF29A6F006B6B1D /* TransactionTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D807A1EF29A6F006B6B1D /* TransactionTable.swift */; };
+		F61D807D1EF29D25006B6B1D /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D807C1EF29D25006B6B1D /* IncomeCell.swift */; };
+		F61D807F1EF2AA83006B6B1D /* AddTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D807E1EF2AA83006B6B1D /* AddTransaction.swift */; };
+		F61D80811EF301E2006B6B1D /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61D80801EF301E2006B6B1D /* NameVC.swift */; };
+		F6375B141EF4D43D0019E2FC /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6375B131EF4D43D0019E2FC /* UserTable.swift */; };
+		F6375B161EF4D5400019E2FC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6375B151EF4D5400019E2FC /* UserCell.swift */; };
+		F660B9291EF87C80007B08AA /* TransactionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F660B9281EF87C80007B08AA /* TransactionContainer.swift */; };
+		F6A088631EF8C48600543EAF /* LineChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6F3E41EF4CA0600CD2C75 /* LineChartVC.swift */; };
+		F6A088641EF8C49000543EAF /* PieChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6F3E21EF4C9F700CD2C75 /* PieChartVC.swift */; };
+		F6F1B9F81EF389CB003C83BE /* TransactionMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1B9F61EF389CB003C83BE /* TransactionMO+CoreDataClass.swift */; };
+		F6F1B9F91EF389CB003C83BE /* TransactionMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1B9F71EF389CB003C83BE /* TransactionMO+CoreDataProperties.swift */; };
+		F6F1B9FE1EF4C5F7003C83BE /* Setup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F1B9FD1EF4C5F7003C83BE /* Setup.storyboard */; };
+		F6FCD03A1EF9CA67007CC4C7 /* AnalysisDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C6F3E01EF4B88700CD2C75 /* AnalysisDateVC.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		33FDDF8F1EF334FE008FBD23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33FDDF6F1EF334FE008FBD23 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 33FDDF761EF334FE008FBD23;
-			remoteInfo = Thrifty;
-		};
-		33FDDF9A1EF334FE008FBD23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33FDDF6F1EF334FE008FBD23 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 33FDDF761EF334FE008FBD23;
-			remoteInfo = Thrifty;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		3041AD0ACD372E9EB6372270 /* Pods-ThriftyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThriftyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThriftyUITests/Pods-ThriftyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		33242BA31EF3D38800973D78 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
-		33242C0D1EF3F63C00973D78 /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
-		33242C0E1EF3F63C00973D78 /* JTCalendarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegate.h; sourceTree = "<group>"; };
-		33242C0F1EF3F63C00973D78 /* JTCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarManager.h; sourceTree = "<group>"; };
-		33242C101EF3F63C00973D78 /* JTCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarManager.m; sourceTree = "<group>"; };
-		33242C111EF3F63C00973D78 /* JTCalendarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarSettings.h; sourceTree = "<group>"; };
-		33242C121EF3F63C00973D78 /* JTCalendarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarSettings.m; sourceTree = "<group>"; };
-		33242C131EF3F63C00973D78 /* JTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateHelper.h; sourceTree = "<group>"; };
-		33242C141EF3F63C00973D78 /* JTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateHelper.m; sourceTree = "<group>"; };
-		33242C161EF3F63C00973D78 /* JTCalendarDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegateManager.h; sourceTree = "<group>"; };
-		33242C171EF3F63C00973D78 /* JTCalendarDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDelegateManager.m; sourceTree = "<group>"; };
-		33242C181EF3F63C00973D78 /* JTCalendarScrollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarScrollManager.h; sourceTree = "<group>"; };
-		33242C191EF3F63C00973D78 /* JTCalendarScrollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarScrollManager.m; sourceTree = "<group>"; };
-		33242C1B1EF3F63C00973D78 /* JTCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDay.h; sourceTree = "<group>"; };
-		33242C1C1EF3F63C00973D78 /* JTCalendarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPage.h; sourceTree = "<group>"; };
-		33242C1D1EF3F63C00973D78 /* JTCalendarWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeek.h; sourceTree = "<group>"; };
-		33242C1E1EF3F63C00973D78 /* JTCalendarWeekDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDay.h; sourceTree = "<group>"; };
-		33242C1F1EF3F63C00973D78 /* JTContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTContent.h; sourceTree = "<group>"; };
-		33242C201EF3F63C00973D78 /* JTMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMenu.h; sourceTree = "<group>"; };
-		33242C221EF3F63C00973D78 /* JTCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDayView.h; sourceTree = "<group>"; };
-		33242C231EF3F63C00973D78 /* JTCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDayView.m; sourceTree = "<group>"; };
-		33242C241EF3F63C00973D78 /* JTCalendarMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarMenuView.h; sourceTree = "<group>"; };
-		33242C251EF3F63C00973D78 /* JTCalendarMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarMenuView.m; sourceTree = "<group>"; };
-		33242C261EF3F63C00973D78 /* JTCalendarPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPageView.h; sourceTree = "<group>"; };
-		33242C271EF3F63C00973D78 /* JTCalendarPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarPageView.m; sourceTree = "<group>"; };
-		33242C281EF3F63C00973D78 /* JTCalendarWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDayView.h; sourceTree = "<group>"; };
-		33242C291EF3F63C00973D78 /* JTCalendarWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekDayView.m; sourceTree = "<group>"; };
-		33242C2A1EF3F63C00973D78 /* JTCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekView.h; sourceTree = "<group>"; };
-		33242C2B1EF3F63C00973D78 /* JTCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekView.m; sourceTree = "<group>"; };
-		33242C2C1EF3F63C00973D78 /* JTHorizontalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHorizontalCalendarView.h; sourceTree = "<group>"; };
-		33242C2D1EF3F63C00973D78 /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
-		33242C2E1EF3F63C00973D78 /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
-		33242C2F1EF3F63C00973D78 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
-		33242C3C1EF4023600973D78 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
-		33242C3F1EF4169900973D78 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
-		33242C451EF4290000973D78 /* ExtraIncomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraIncomeVC.swift; sourceTree = "<group>"; };
-		33FDDF771EF334FE008FBD23 /* Thrifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FDDF7A1EF334FE008FBD23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33FDDF841EF334FE008FBD23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		33FDDF891EF334FE008FBD23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33FDDF8E1EF334FE008FBD23 /* ThriftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FDDF921EF334FE008FBD23 /* ThriftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftyTests.swift; sourceTree = "<group>"; };
-		33FDDF941EF334FE008FBD23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33FDDF991EF334FE008FBD23 /* ThriftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FDDF9D1EF334FE008FBD23 /* ThriftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftyUITests.swift; sourceTree = "<group>"; };
-		33FDDF9F1EF334FE008FBD23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33FDDFAB1EF335F5008FBD23 /* Thrifty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thrifty-Bridging-Header.h"; sourceTree = "<group>"; };
-		33FDDFAE1EF335F6008FBD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		33FDDFB01EF335F6008FBD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		33FDDFB11EF335F6008FBD23 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
-		33FDDFB21EF335F6008FBD23 /* AddIncomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIncomeViewController.swift; sourceTree = "<group>"; };
-		33FDDFB31EF335F6008FBD23 /* AnalysisVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisVC.swift; sourceTree = "<group>"; };
-		33FDDFB41EF335F6008FBD23 /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
-		33FDDFB51EF335F6008FBD23 /* ExpenseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
-		33FDDFB61EF335F6008FBD23 /* ExpenseMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		33FDDFB71EF335F6008FBD23 /* ExpenseMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExpenseMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33FDDFB81EF335F6008FBD23 /* ExpenseTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseTableController.swift; sourceTree = "<group>"; };
-		33FDDFB91EF335F6008FBD23 /* ExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseVC.swift; sourceTree = "<group>"; };
-		33FDDFBA1EF335F6008FBD23 /* FirstTimeSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTimeSetupViewController.swift; sourceTree = "<group>"; };
-		33FDDFBB1EF335F6008FBD23 /* GoalMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GoalMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		33FDDFBC1EF335F6008FBD23 /* GoalMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GoalMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33FDDFBF1EF335F6008FBD23 /* IncomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
-		33FDDFC01EF335F6008FBD23 /* IncomeMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IncomeMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		33FDDFC11EF335F6008FBD23 /* IncomeMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IncomeMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33FDDFC21EF335F6008FBD23 /* IncomeTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeTableController.swift; sourceTree = "<group>"; };
-		33FDDFC31EF335F6008FBD23 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		33FDDFC41EF335F6008FBD23 /* SetBBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetBBViewController.swift; sourceTree = "<group>"; };
-		33FDDFC51EF335F6008FBD23 /* SetSavingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetSavingsViewController.swift; sourceTree = "<group>"; };
-		33FDDFC61EF335F6008FBD23 /* StartingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingInfo.swift; sourceTree = "<group>"; };
-		33FDDFCA1EF335F6008FBD23 /* UserMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		33FDDFCB1EF335F6008FBD23 /* UserMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33FDDFEC1EF33737008FBD23 /* Thrifty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Thrifty.xcdatamodel; sourceTree = "<group>"; };
-		5AF1C657EE7976037D21114C /* Pods-Thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thrifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thrifty/Pods-Thrifty.release.xcconfig"; sourceTree = "<group>"; };
-		5F084DC0DF5F373D5D53B6B0 /* Pods-ThriftyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThriftyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThriftyUITests/Pods-ThriftyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6D9A85EA5B824DF434005660 /* Pods-ThriftyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThriftyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThriftyTests/Pods-ThriftyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		86021E49A932ED6D8BEB8B5D /* Pods_Thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E0ED9C5A033CF5F2BA4AD90 /* Pods-Thrifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thrifty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thrifty/Pods-Thrifty.debug.xcconfig"; sourceTree = "<group>"; };
-		97A6C78CF626CE524DACF800 /* Pods_ThriftyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThriftyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8603FB3A946B94A582A22D6 /* Pods-ThriftyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThriftyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThriftyTests/Pods-ThriftyTests.release.xcconfig"; sourceTree = "<group>"; };
-		F22750B0607AC4F7BED2EA15 /* Pods_ThriftyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThriftyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A50D7C45845FCB980B286F /* Pods-Thrifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thrifty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Thrifty/Pods-Thrifty.debug.xcconfig"; sourceTree = "<group>"; };
+		2644817BCBEC393FDD8B4D04 /* Pods-Thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thrifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Thrifty/Pods-Thrifty.release.xcconfig"; sourceTree = "<group>"; };
+		33AD89FB1EFA608000E13895 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		33AD89FC1EFA608000E13895 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		33AD8A001EFA61B000E13895 /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
+		33AD8A011EFA61B000E13895 /* JTCalendarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegate.h; sourceTree = "<group>"; };
+		33AD8A021EFA61B000E13895 /* JTCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarManager.h; sourceTree = "<group>"; };
+		33AD8A031EFA61B000E13895 /* JTCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarManager.m; sourceTree = "<group>"; };
+		33AD8A041EFA61B000E13895 /* JTCalendarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarSettings.h; sourceTree = "<group>"; };
+		33AD8A051EFA61B000E13895 /* JTCalendarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarSettings.m; sourceTree = "<group>"; };
+		33AD8A061EFA61B000E13895 /* JTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateHelper.h; sourceTree = "<group>"; };
+		33AD8A071EFA61B000E13895 /* JTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateHelper.m; sourceTree = "<group>"; };
+		33AD8A091EFA61B000E13895 /* JTCalendarDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegateManager.h; sourceTree = "<group>"; };
+		33AD8A0A1EFA61B000E13895 /* JTCalendarDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDelegateManager.m; sourceTree = "<group>"; };
+		33AD8A0B1EFA61B000E13895 /* JTCalendarScrollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarScrollManager.h; sourceTree = "<group>"; };
+		33AD8A0C1EFA61B000E13895 /* JTCalendarScrollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarScrollManager.m; sourceTree = "<group>"; };
+		33AD8A0E1EFA61B000E13895 /* JTCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDay.h; sourceTree = "<group>"; };
+		33AD8A0F1EFA61B000E13895 /* JTCalendarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPage.h; sourceTree = "<group>"; };
+		33AD8A101EFA61B000E13895 /* JTCalendarWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeek.h; sourceTree = "<group>"; };
+		33AD8A111EFA61B000E13895 /* JTCalendarWeekDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDay.h; sourceTree = "<group>"; };
+		33AD8A121EFA61B000E13895 /* JTContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTContent.h; sourceTree = "<group>"; };
+		33AD8A131EFA61B000E13895 /* JTMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMenu.h; sourceTree = "<group>"; };
+		33AD8A151EFA61B000E13895 /* JTCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDayView.h; sourceTree = "<group>"; };
+		33AD8A161EFA61B000E13895 /* JTCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDayView.m; sourceTree = "<group>"; };
+		33AD8A171EFA61B000E13895 /* JTCalendarMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarMenuView.h; sourceTree = "<group>"; };
+		33AD8A181EFA61B000E13895 /* JTCalendarMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarMenuView.m; sourceTree = "<group>"; };
+		33AD8A191EFA61B000E13895 /* JTCalendarPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPageView.h; sourceTree = "<group>"; };
+		33AD8A1A1EFA61B000E13895 /* JTCalendarPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarPageView.m; sourceTree = "<group>"; };
+		33AD8A1B1EFA61B000E13895 /* JTCalendarWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDayView.h; sourceTree = "<group>"; };
+		33AD8A1C1EFA61B000E13895 /* JTCalendarWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekDayView.m; sourceTree = "<group>"; };
+		33AD8A1D1EFA61B000E13895 /* JTCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekView.h; sourceTree = "<group>"; };
+		33AD8A1E1EFA61B000E13895 /* JTCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekView.m; sourceTree = "<group>"; };
+		33AD8A1F1EFA61B000E13895 /* JTHorizontalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHorizontalCalendarView.h; sourceTree = "<group>"; };
+		33AD8A201EFA61B000E13895 /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
+		33AD8A211EFA61B000E13895 /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
+		33AD8A221EFA61B000E13895 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
+		7A849C62ACF427A5EB362E07 /* Pods_Thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41777DA1EF8649B00364981 /* FundsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundsTVC.swift; sourceTree = "<group>"; };
+		E41777DC1EF864C900364981 /* FundsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundsTVCell.swift; sourceTree = "<group>"; };
+		E41777DF1EF886B300364981 /* FundsAddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundsAddVC.swift; sourceTree = "<group>"; };
+		E41777E11EF8886B00364981 /* FundDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundDetailVC.swift; sourceTree = "<group>"; };
+		E41777E31EF8B84600364981 /* PieTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieTableVC.swift; sourceTree = "<group>"; };
+		E41777E51EF8B86000364981 /* LineTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineTableVC.swift; sourceTree = "<group>"; };
+		E41D78821EEF8EBE000CC8B1 /* ExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseVC.swift; sourceTree = "<group>"; };
+		E4C6F3DE1EF4A79900CD2C75 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		E4C6F3E01EF4B88700CD2C75 /* AnalysisDateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisDateVC.swift; sourceTree = "<group>"; };
+		E4C6F3E21EF4C9F700CD2C75 /* PieChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartVC.swift; sourceTree = "<group>"; };
+		E4C6F3E41EF4CA0600CD2C75 /* LineChartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartVC.swift; sourceTree = "<group>"; };
+		E4D96FE71EEB15700030BF2A /* Thrifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thrifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D96FEA1EEB15700030BF2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4D96FEF1EEB15700030BF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4D96FF21EEB15700030BF2A /* Thrifty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Thrifty.xcdatamodel; sourceTree = "<group>"; };
+		E4D96FF41EEB15700030BF2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D96FF71EEB15700030BF2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4D96FF91EEB15700030BF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D96FFF1EEB1AEC0030BF2A /* SetBBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetBBViewController.swift; sourceTree = "<group>"; };
+		E4D970031EEB20630030BF2A /* SetSavingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetSavingsViewController.swift; sourceTree = "<group>"; };
+		E4D970051EEB210D0030BF2A /* BudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		E4D970071EEB229C0030BF2A /* StartingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingInfo.swift; sourceTree = "<group>"; };
+		E4D970101EEB62660030BF2A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E4F8A38C1EF1E97900CBCCB2 /* Thrifty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thrifty-Bridging-Header.h"; sourceTree = "<group>"; };
+		E4F8A38F1EF1EA3300CBCCB2 /* HistoryObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryObjC.h; sourceTree = "<group>"; };
+		E4F8A3901EF1EA3300CBCCB2 /* HistoryObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryObjC.m; sourceTree = "<group>"; };
+		E4F8A3951EF20FAB00CBCCB2 /* AnalysisVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisVC.swift; sourceTree = "<group>"; };
+		F61D806C1EF1E8BB006B6B1D /* UserMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F61D806D1EF1E8BB006B6B1D /* UserMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F61D807A1EF29A6F006B6B1D /* TransactionTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTable.swift; sourceTree = "<group>"; };
+		F61D807C1EF29D25006B6B1D /* IncomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
+		F61D807E1EF2AA83006B6B1D /* AddTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransaction.swift; sourceTree = "<group>"; };
+		F61D80801EF301E2006B6B1D /* NameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
+		F6375B131EF4D43D0019E2FC /* UserTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
+		F6375B151EF4D5400019E2FC /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F660B9281EF87C80007B08AA /* TransactionContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionContainer.swift; sourceTree = "<group>"; };
+		F6F1B9F61EF389CB003C83BE /* TransactionMO+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransactionMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6F1B9F71EF389CB003C83BE /* TransactionMO+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransactionMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F6F1B9FD1EF4C5F7003C83BE /* Setup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setup.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		33FDDF741EF334FE008FBD23 /* Frameworks */ = {
+		E4D96FE41EEB15700030BF2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB334EF327D8F2C7DF5E881B /* Pods_Thrifty.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33FDDF8B1EF334FE008FBD23 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91E17944B84B382864D5B6A5 /* Pods_ThriftyTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33FDDF961EF334FE008FBD23 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE761DE4EB9816E121B66DCD /* Pods_ThriftyUITests.framework in Frameworks */,
+				6BF90A76469703F418227E6F /* Pods_Thrifty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0367F5C2D170C77EC305ADA9 /* Pods */ = {
+		33AD89FF1EFA61B000E13895 /* JTCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				8E0ED9C5A033CF5F2BA4AD90 /* Pods-Thrifty.debug.xcconfig */,
-				5AF1C657EE7976037D21114C /* Pods-Thrifty.release.xcconfig */,
-				6D9A85EA5B824DF434005660 /* Pods-ThriftyTests.debug.xcconfig */,
-				B8603FB3A946B94A582A22D6 /* Pods-ThriftyTests.release.xcconfig */,
-				5F084DC0DF5F373D5D53B6B0 /* Pods-ThriftyUITests.debug.xcconfig */,
-				3041AD0ACD372E9EB6372270 /* Pods-ThriftyUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		27C14EEA165B3467C793CE8B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				86021E49A932ED6D8BEB8B5D /* Pods_Thrifty.framework */,
-				97A6C78CF626CE524DACF800 /* Pods_ThriftyTests.framework */,
-				F22750B0607AC4F7BED2EA15 /* Pods_ThriftyUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		33242C0C1EF3F63C00973D78 /* JTCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				33242C0D1EF3F63C00973D78 /* JTCalendar.h */,
-				33242C0E1EF3F63C00973D78 /* JTCalendarDelegate.h */,
-				33242C0F1EF3F63C00973D78 /* JTCalendarManager.h */,
-				33242C101EF3F63C00973D78 /* JTCalendarManager.m */,
-				33242C111EF3F63C00973D78 /* JTCalendarSettings.h */,
-				33242C121EF3F63C00973D78 /* JTCalendarSettings.m */,
-				33242C131EF3F63C00973D78 /* JTDateHelper.h */,
-				33242C141EF3F63C00973D78 /* JTDateHelper.m */,
-				33242C151EF3F63C00973D78 /* Managers */,
-				33242C1A1EF3F63C00973D78 /* Protocols */,
-				33242C211EF3F63C00973D78 /* Views */,
+				33AD8A001EFA61B000E13895 /* JTCalendar.h */,
+				33AD8A011EFA61B000E13895 /* JTCalendarDelegate.h */,
+				33AD8A021EFA61B000E13895 /* JTCalendarManager.h */,
+				33AD8A031EFA61B000E13895 /* JTCalendarManager.m */,
+				33AD8A041EFA61B000E13895 /* JTCalendarSettings.h */,
+				33AD8A051EFA61B000E13895 /* JTCalendarSettings.m */,
+				33AD8A061EFA61B000E13895 /* JTDateHelper.h */,
+				33AD8A071EFA61B000E13895 /* JTDateHelper.m */,
+				33AD8A081EFA61B000E13895 /* Managers */,
+				33AD8A0D1EFA61B000E13895 /* Protocols */,
+				33AD8A141EFA61B000E13895 /* Views */,
 			);
 			path = JTCalendar;
 			sourceTree = "<group>";
 		};
-		33242C151EF3F63C00973D78 /* Managers */ = {
+		33AD8A081EFA61B000E13895 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				33242C161EF3F63C00973D78 /* JTCalendarDelegateManager.h */,
-				33242C171EF3F63C00973D78 /* JTCalendarDelegateManager.m */,
-				33242C181EF3F63C00973D78 /* JTCalendarScrollManager.h */,
-				33242C191EF3F63C00973D78 /* JTCalendarScrollManager.m */,
+				33AD8A091EFA61B000E13895 /* JTCalendarDelegateManager.h */,
+				33AD8A0A1EFA61B000E13895 /* JTCalendarDelegateManager.m */,
+				33AD8A0B1EFA61B000E13895 /* JTCalendarScrollManager.h */,
+				33AD8A0C1EFA61B000E13895 /* JTCalendarScrollManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		33242C1A1EF3F63C00973D78 /* Protocols */ = {
+		33AD8A0D1EFA61B000E13895 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				33242C1B1EF3F63C00973D78 /* JTCalendarDay.h */,
-				33242C1C1EF3F63C00973D78 /* JTCalendarPage.h */,
-				33242C1D1EF3F63C00973D78 /* JTCalendarWeek.h */,
-				33242C1E1EF3F63C00973D78 /* JTCalendarWeekDay.h */,
-				33242C1F1EF3F63C00973D78 /* JTContent.h */,
-				33242C201EF3F63C00973D78 /* JTMenu.h */,
+				33AD8A0E1EFA61B000E13895 /* JTCalendarDay.h */,
+				33AD8A0F1EFA61B000E13895 /* JTCalendarPage.h */,
+				33AD8A101EFA61B000E13895 /* JTCalendarWeek.h */,
+				33AD8A111EFA61B000E13895 /* JTCalendarWeekDay.h */,
+				33AD8A121EFA61B000E13895 /* JTContent.h */,
+				33AD8A131EFA61B000E13895 /* JTMenu.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		33242C211EF3F63C00973D78 /* Views */ = {
+		33AD8A141EFA61B000E13895 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				33242C221EF3F63C00973D78 /* JTCalendarDayView.h */,
-				33242C231EF3F63C00973D78 /* JTCalendarDayView.m */,
-				33242C241EF3F63C00973D78 /* JTCalendarMenuView.h */,
-				33242C251EF3F63C00973D78 /* JTCalendarMenuView.m */,
-				33242C261EF3F63C00973D78 /* JTCalendarPageView.h */,
-				33242C271EF3F63C00973D78 /* JTCalendarPageView.m */,
-				33242C281EF3F63C00973D78 /* JTCalendarWeekDayView.h */,
-				33242C291EF3F63C00973D78 /* JTCalendarWeekDayView.m */,
-				33242C2A1EF3F63C00973D78 /* JTCalendarWeekView.h */,
-				33242C2B1EF3F63C00973D78 /* JTCalendarWeekView.m */,
-				33242C2C1EF3F63C00973D78 /* JTHorizontalCalendarView.h */,
-				33242C2D1EF3F63C00973D78 /* JTHorizontalCalendarView.m */,
-				33242C2E1EF3F63C00973D78 /* JTVerticalCalendarView.h */,
-				33242C2F1EF3F63C00973D78 /* JTVerticalCalendarView.m */,
+				33AD8A151EFA61B000E13895 /* JTCalendarDayView.h */,
+				33AD8A161EFA61B000E13895 /* JTCalendarDayView.m */,
+				33AD8A171EFA61B000E13895 /* JTCalendarMenuView.h */,
+				33AD8A181EFA61B000E13895 /* JTCalendarMenuView.m */,
+				33AD8A191EFA61B000E13895 /* JTCalendarPageView.h */,
+				33AD8A1A1EFA61B000E13895 /* JTCalendarPageView.m */,
+				33AD8A1B1EFA61B000E13895 /* JTCalendarWeekDayView.h */,
+				33AD8A1C1EFA61B000E13895 /* JTCalendarWeekDayView.m */,
+				33AD8A1D1EFA61B000E13895 /* JTCalendarWeekView.h */,
+				33AD8A1E1EFA61B000E13895 /* JTCalendarWeekView.m */,
+				33AD8A1F1EFA61B000E13895 /* JTHorizontalCalendarView.h */,
+				33AD8A201EFA61B000E13895 /* JTHorizontalCalendarView.m */,
+				33AD8A211EFA61B000E13895 /* JTVerticalCalendarView.h */,
+				33AD8A221EFA61B000E13895 /* JTVerticalCalendarView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		33242C3E1EF4168200973D78 /* Extension */ = {
+		AAB334B70D48539F55D55F4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33242C3F1EF4169900973D78 /* NSDate.swift */,
+				7A849C62ACF427A5EB362E07 /* Pods_Thrifty.framework */,
 			);
-			name = Extension;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		33FDDF6E1EF334FE008FBD23 = {
+		CC4BC8EF74CF207108060524 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				33FDDF791EF334FE008FBD23 /* Thrifty */,
-				33FDDF911EF334FE008FBD23 /* ThriftyTests */,
-				33FDDF9C1EF334FE008FBD23 /* ThriftyUITests */,
-				33FDDF781EF334FE008FBD23 /* Products */,
-				0367F5C2D170C77EC305ADA9 /* Pods */,
-				27C14EEA165B3467C793CE8B /* Frameworks */,
+				19A50D7C45845FCB980B286F /* Pods-Thrifty.debug.xcconfig */,
+				2644817BCBEC393FDD8B4D04 /* Pods-Thrifty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4D96FDE1EEB15700030BF2A = {
+			isa = PBXGroup;
+			children = (
+				E4D96FE91EEB15700030BF2A /* Thrifty */,
+				E4D96FE81EEB15700030BF2A /* Products */,
+				CC4BC8EF74CF207108060524 /* Pods */,
+				AAB334B70D48539F55D55F4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		33FDDF781EF334FE008FBD23 /* Products */ = {
+		E4D96FE81EEB15700030BF2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				33FDDF771EF334FE008FBD23 /* Thrifty.app */,
-				33FDDF8E1EF334FE008FBD23 /* ThriftyTests.xctest */,
-				33FDDF991EF334FE008FBD23 /* ThriftyUITests.xctest */,
+				E4D96FE71EEB15700030BF2A /* Thrifty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		33FDDF791EF334FE008FBD23 /* Thrifty */ = {
+		E4D96FE91EEB15700030BF2A /* Thrifty */ = {
 			isa = PBXGroup;
 			children = (
-				33242C3E1EF4168200973D78 /* Extension */,
-				33242C0C1EF3F63C00973D78 /* JTCalendar */,
-				33FDDFB41EF335F6008FBD23 /* BudgetViewController.swift */,
-				33FDDFC31EF335F6008FBD23 /* MainViewController.swift */,
-				33FDDFAF1EF335F6008FBD23 /* Main.storyboard */,
-				33FDDFB91EF335F6008FBD23 /* ExpenseVC.swift */,
-				33242C451EF4290000973D78 /* ExtraIncomeVC.swift */,
-				33242BA31EF3D38800973D78 /* HistoryVC.swift */,
-				33242C3C1EF4023600973D78 /* HistoryCell.swift */,
-				33FDDFB31EF335F6008FBD23 /* AnalysisVC.swift */,
-				33FDDFE81EF33626008FBD23 /* Setter VCs */,
-				33FDDFE91EF3362F008FBD23 /* Supporting Files */,
-				33FDDFEA1EF3363F008FBD23 /* Core Data */,
-				33FDDFAB1EF335F5008FBD23 /* Thrifty-Bridging-Header.h */,
+				33AD89FF1EFA61B000E13895 /* JTCalendar */,
+				33AD89FB1EFA608000E13895 /* HistoryCell.swift */,
+				33AD89FC1EFA608000E13895 /* HistoryVC.swift */,
+				E4D96FEE1EEB15700030BF2A /* Main.storyboard */,
+				F6F1B9FD1EF4C5F7003C83BE /* Setup.storyboard */,
+				F6375B131EF4D43D0019E2FC /* UserTable.swift */,
+				F6375B151EF4D5400019E2FC /* UserCell.swift */,
+				E4D970051EEB210D0030BF2A /* BudgetViewController.swift */,
+				E41777DA1EF8649B00364981 /* FundsTVC.swift */,
+				E41777DC1EF864C900364981 /* FundsTVCell.swift */,
+				E41777DF1EF886B300364981 /* FundsAddVC.swift */,
+				E41777E11EF8886B00364981 /* FundDetailVC.swift */,
+				E4D970101EEB62660030BF2A /* MainViewController.swift */,
+				E41D78821EEF8EBE000CC8B1 /* ExpenseVC.swift */,
+				E4F8A38F1EF1EA3300CBCCB2 /* HistoryObjC.h */,
+				E4F8A3901EF1EA3300CBCCB2 /* HistoryObjC.m */,
+				E4F8A3951EF20FAB00CBCCB2 /* AnalysisVC.swift */,
+				E4C6F3E01EF4B88700CD2C75 /* AnalysisDateVC.swift */,
+				E4C6F3E21EF4C9F700CD2C75 /* PieChartVC.swift */,
+				E41777E31EF8B84600364981 /* PieTableVC.swift */,
+				E4C6F3E41EF4CA0600CD2C75 /* LineChartVC.swift */,
+				E41777E51EF8B86000364981 /* LineTableVC.swift */,
+				F681E3211EEE2FA600926D75 /* Setter VCs */,
+				F681E3201EEE2F8A00926D75 /* Supporting Files */,
+				E4D9700D1EEB406F0030BF2A /* Core Data */,
+				E4F8A38C1EF1E97900CBCCB2 /* Thrifty-Bridging-Header.h */,
 			);
 			path = Thrifty;
 			sourceTree = "<group>";
 		};
-		33FDDF911EF334FE008FBD23 /* ThriftyTests */ = {
+		E4D9700D1EEB406F0030BF2A /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				33FDDF921EF334FE008FBD23 /* ThriftyTests.swift */,
-				33FDDF941EF334FE008FBD23 /* Info.plist */,
+				F6F1B9F61EF389CB003C83BE /* TransactionMO+CoreDataClass.swift */,
+				F6F1B9F71EF389CB003C83BE /* TransactionMO+CoreDataProperties.swift */,
+				F61D806C1EF1E8BB006B6B1D /* UserMO+CoreDataClass.swift */,
+				F61D806D1EF1E8BB006B6B1D /* UserMO+CoreDataProperties.swift */,
+				E4D96FF11EEB15700030BF2A /* Thrifty.xcdatamodeld */,
 			);
-			path = ThriftyTests;
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
-		33FDDF9C1EF334FE008FBD23 /* ThriftyUITests */ = {
+		F681E3201EEE2F8A00926D75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				33FDDF9D1EF334FE008FBD23 /* ThriftyUITests.swift */,
-				33FDDF9F1EF334FE008FBD23 /* Info.plist */,
-			);
-			path = ThriftyUITests;
-			sourceTree = "<group>";
-		};
-		33FDDFE81EF33626008FBD23 /* Setter VCs */ = {
-			isa = PBXGroup;
-			children = (
-				33FDDFBA1EF335F6008FBD23 /* FirstTimeSetupViewController.swift */,
-				33FDDFC41EF335F6008FBD23 /* SetBBViewController.swift */,
-				33FDDFC21EF335F6008FBD23 /* IncomeTableController.swift */,
-				33FDDFBF1EF335F6008FBD23 /* IncomeCell.swift */,
-				33FDDFB21EF335F6008FBD23 /* AddIncomeViewController.swift */,
-				33FDDFB51EF335F6008FBD23 /* ExpenseCell.swift */,
-				33FDDFB81EF335F6008FBD23 /* ExpenseTableController.swift */,
-				33FDDFB11EF335F6008FBD23 /* AddExpenseViewController.swift */,
-				33FDDFC51EF335F6008FBD23 /* SetSavingsViewController.swift */,
-			);
-			name = "Setter VCs";
-			sourceTree = "<group>";
-		};
-		33FDDFE91EF3362F008FBD23 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				33FDDFAD1EF335F6008FBD23 /* LaunchScreen.storyboard */,
-				33FDDF841EF334FE008FBD23 /* Assets.xcassets */,
-				33FDDF7A1EF334FE008FBD23 /* AppDelegate.swift */,
-				33FDDFC61EF335F6008FBD23 /* StartingInfo.swift */,
-				33FDDF891EF334FE008FBD23 /* Info.plist */,
+				E4C6F3DE1EF4A79900CD2C75 /* NSDate.swift */,
+				E4D96FF61EEB15700030BF2A /* LaunchScreen.storyboard */,
+				E4D96FF41EEB15700030BF2A /* Assets.xcassets */,
+				E4D96FEA1EEB15700030BF2A /* AppDelegate.swift */,
+				E4D970071EEB229C0030BF2A /* StartingInfo.swift */,
+				E4D96FF91EEB15700030BF2A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		33FDDFEA1EF3363F008FBD23 /* Core Data */ = {
+		F681E3211EEE2FA600926D75 /* Setter VCs */ = {
 			isa = PBXGroup;
 			children = (
-				33FDDFBB1EF335F6008FBD23 /* GoalMO+CoreDataClass.swift */,
-				33FDDFBC1EF335F6008FBD23 /* GoalMO+CoreDataProperties.swift */,
-				33FDDFCA1EF335F6008FBD23 /* UserMO+CoreDataClass.swift */,
-				33FDDFCB1EF335F6008FBD23 /* UserMO+CoreDataProperties.swift */,
-				33FDDFB61EF335F6008FBD23 /* ExpenseMO+CoreDataClass.swift */,
-				33FDDFB71EF335F6008FBD23 /* ExpenseMO+CoreDataProperties.swift */,
-				33FDDFC01EF335F6008FBD23 /* IncomeMO+CoreDataClass.swift */,
-				33FDDFC11EF335F6008FBD23 /* IncomeMO+CoreDataProperties.swift */,
-				33FDDFEB1EF33737008FBD23 /* Thrifty.xcdatamodeld */,
+				F61D80801EF301E2006B6B1D /* NameVC.swift */,
+				E4D96FFF1EEB1AEC0030BF2A /* SetBBViewController.swift */,
+				F61D807C1EF29D25006B6B1D /* IncomeCell.swift */,
+				F61D807A1EF29A6F006B6B1D /* TransactionTable.swift */,
+				F660B9281EF87C80007B08AA /* TransactionContainer.swift */,
+				F61D807E1EF2AA83006B6B1D /* AddTransaction.swift */,
+				E4D970031EEB20630030BF2A /* SetSavingsViewController.swift */,
 			);
-			name = "Core Data";
+			name = "Setter VCs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		33FDDF761EF334FE008FBD23 /* Thrifty */ = {
+		E4D96FE61EEB15700030BF2A /* Thrifty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33FDDFA21EF334FE008FBD23 /* Build configuration list for PBXNativeTarget "Thrifty" */;
+			buildConfigurationList = E4D96FFC1EEB15700030BF2A /* Build configuration list for PBXNativeTarget "Thrifty" */;
 			buildPhases = (
-				0CF4CEC66091843695E7980C /* [CP] Check Pods Manifest.lock */,
-				33FDDF731EF334FE008FBD23 /* Sources */,
-				33FDDF741EF334FE008FBD23 /* Frameworks */,
-				33FDDF751EF334FE008FBD23 /* Resources */,
-				A834E3921ADD578C0CF9E15F /* [CP] Embed Pods Frameworks */,
-				A685A634FBDDE406A4305738 /* [CP] Copy Pods Resources */,
+				5D7AA2A1BFA2F7F25C50CBEF /* [CP] Check Pods Manifest.lock */,
+				E4D96FE31EEB15700030BF2A /* Sources */,
+				E4D96FE41EEB15700030BF2A /* Frameworks */,
+				E4D96FE51EEB15700030BF2A /* Resources */,
+				B7EC3B85C7D13FD1C857BFCF /* [CP] Embed Pods Frameworks */,
+				F793D77273570BE9874772BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -405,80 +340,27 @@
 			);
 			name = Thrifty;
 			productName = Thrifty;
-			productReference = 33FDDF771EF334FE008FBD23 /* Thrifty.app */;
+			productReference = E4D96FE71EEB15700030BF2A /* Thrifty.app */;
 			productType = "com.apple.product-type.application";
-		};
-		33FDDF8D1EF334FE008FBD23 /* ThriftyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 33FDDFA51EF334FE008FBD23 /* Build configuration list for PBXNativeTarget "ThriftyTests" */;
-			buildPhases = (
-				4F20120802DA436C6D7FAF0C /* [CP] Check Pods Manifest.lock */,
-				33FDDF8A1EF334FE008FBD23 /* Sources */,
-				33FDDF8B1EF334FE008FBD23 /* Frameworks */,
-				33FDDF8C1EF334FE008FBD23 /* Resources */,
-				E11A5B5D2EA50E2E7D9EFCD9 /* [CP] Embed Pods Frameworks */,
-				2D64B22358D86E41C2562022 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				33FDDF901EF334FE008FBD23 /* PBXTargetDependency */,
-			);
-			name = ThriftyTests;
-			productName = ThriftyTests;
-			productReference = 33FDDF8E1EF334FE008FBD23 /* ThriftyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		33FDDF981EF334FE008FBD23 /* ThriftyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 33FDDFA81EF334FE008FBD23 /* Build configuration list for PBXNativeTarget "ThriftyUITests" */;
-			buildPhases = (
-				129B991AEAD38723CA81E4E3 /* [CP] Check Pods Manifest.lock */,
-				33FDDF951EF334FE008FBD23 /* Sources */,
-				33FDDF961EF334FE008FBD23 /* Frameworks */,
-				33FDDF971EF334FE008FBD23 /* Resources */,
-				3A01685CF5A53F0809D3BB79 /* [CP] Embed Pods Frameworks */,
-				C0FD72E31106EA88C167D58F /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				33FDDF9B1EF334FE008FBD23 /* PBXTargetDependency */,
-			);
-			name = ThriftyUITests;
-			productName = ThriftyUITests;
-			productReference = 33FDDF991EF334FE008FBD23 /* ThriftyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		33FDDF6F1EF334FE008FBD23 /* Project object */ = {
+		E4D96FDF1EEB15700030BF2A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Lomesh Pansuriya";
+				ORGANIZATIONNAME = DeAnza;
 				TargetAttributes = {
-					33FDDF761EF334FE008FBD23 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = R2T7M4F5P6;
+					E4D96FE61EEB15700030BF2A = {
+						CreatedOnToolsVersion = 8.3.1;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					33FDDF8D1EF334FE008FBD23 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 33FDDF761EF334FE008FBD23;
-					};
-					33FDDF981EF334FE008FBD23 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 33FDDF761EF334FE008FBD23;
-					};
 				};
 			};
-			buildConfigurationList = 33FDDF721EF334FE008FBD23 /* Build configuration list for PBXProject "Thrifty" */;
+			buildConfigurationList = E4D96FE21EEB15700030BF2A /* Build configuration list for PBXProject "Thrifty" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -486,47 +368,32 @@
 				en,
 				Base,
 			);
-			mainGroup = 33FDDF6E1EF334FE008FBD23;
-			productRefGroup = 33FDDF781EF334FE008FBD23 /* Products */;
+			mainGroup = E4D96FDE1EEB15700030BF2A;
+			productRefGroup = E4D96FE81EEB15700030BF2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				33FDDF761EF334FE008FBD23 /* Thrifty */,
-				33FDDF8D1EF334FE008FBD23 /* ThriftyTests */,
-				33FDDF981EF334FE008FBD23 /* ThriftyUITests */,
+				E4D96FE61EEB15700030BF2A /* Thrifty */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		33FDDF751EF334FE008FBD23 /* Resources */ = {
+		E4D96FE51EEB15700030BF2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33FDDFCE1EF335F6008FBD23 /* Main.storyboard in Resources */,
-				33FDDFCD1EF335F6008FBD23 /* LaunchScreen.storyboard in Resources */,
-				33FDDF851EF334FE008FBD23 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33FDDF8C1EF334FE008FBD23 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33FDDF971EF334FE008FBD23 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F6F1B9FE1EF4C5F7003C83BE /* Setup.storyboard in Resources */,
+				E4D96FF81EEB15700030BF2A /* LaunchScreen.storyboard in Resources */,
+				E4D96FF51EEB15700030BF2A /* Assets.xcassets in Resources */,
+				E4D96FF01EEB15700030BF2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CF4CEC66091843695E7980C /* [CP] Check Pods Manifest.lock */ = {
+		5D7AA2A1BFA2F7F25C50CBEF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -541,82 +408,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		129B991AEAD38723CA81E4E3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2D64B22358D86E41C2562022 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThriftyTests/Pods-ThriftyTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3A01685CF5A53F0809D3BB79 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThriftyUITests/Pods-ThriftyUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F20120802DA436C6D7FAF0C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A685A634FBDDE406A4305738 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thrifty/Pods-Thrifty-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A834E3921ADD578C0CF9E15F /* [CP] Embed Pods Frameworks */ = {
+		B7EC3B85C7D13FD1C857BFCF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -631,7 +423,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thrifty/Pods-Thrifty-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C0FD72E31106EA88C167D58F /* [CP] Copy Pods Resources */ = {
+		F793D77273570BE9874772BE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -643,128 +435,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThriftyUITests/Pods-ThriftyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E11A5B5D2EA50E2E7D9EFCD9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThriftyTests/Pods-ThriftyTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Thrifty/Pods-Thrifty-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33FDDF731EF334FE008FBD23 /* Sources */ = {
+		E4D96FE31EEB15700030BF2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33242C3A1EF3F63C00973D78 /* JTHorizontalCalendarView.m in Sources */,
-				33FDDFD41EF335F6008FBD23 /* ExpenseMO+CoreDataClass.swift in Sources */,
-				33FDDF7B1EF334FE008FBD23 /* AppDelegate.swift in Sources */,
-				33242C3D1EF4023600973D78 /* HistoryCell.swift in Sources */,
-				33FDDFE11EF335F6008FBD23 /* SetBBViewController.swift in Sources */,
-				33FDDFDD1EF335F6008FBD23 /* IncomeMO+CoreDataClass.swift in Sources */,
-				33FDDFD51EF335F6008FBD23 /* ExpenseMO+CoreDataProperties.swift in Sources */,
-				33FDDFD21EF335F6008FBD23 /* BudgetViewController.swift in Sources */,
-				33FDDFD81EF335F6008FBD23 /* FirstTimeSetupViewController.swift in Sources */,
-				33FDDFDF1EF335F6008FBD23 /* IncomeTableController.swift in Sources */,
-				33242C311EF3F63C00973D78 /* JTCalendarSettings.m in Sources */,
-				33FDDFE61EF335F6008FBD23 /* UserMO+CoreDataProperties.swift in Sources */,
-				33242C391EF3F63C00973D78 /* JTCalendarWeekView.m in Sources */,
-				33242C361EF3F63C00973D78 /* JTCalendarMenuView.m in Sources */,
-				33242C401EF4169900973D78 /* NSDate.swift in Sources */,
-				33FDDFCF1EF335F6008FBD23 /* AddExpenseViewController.swift in Sources */,
-				33FDDFE21EF335F6008FBD23 /* SetSavingsViewController.swift in Sources */,
-				33242C331EF3F63C00973D78 /* JTCalendarDelegateManager.m in Sources */,
-				33242BA41EF3D38800973D78 /* HistoryVC.swift in Sources */,
-				33FDDFED1EF33737008FBD23 /* Thrifty.xcdatamodeld in Sources */,
-				33242C341EF3F63C00973D78 /* JTCalendarScrollManager.m in Sources */,
-				33FDDFDC1EF335F6008FBD23 /* IncomeCell.swift in Sources */,
-				33FDDFD61EF335F6008FBD23 /* ExpenseTableController.swift in Sources */,
-				33FDDFDA1EF335F6008FBD23 /* GoalMO+CoreDataProperties.swift in Sources */,
-				33242C461EF4290000973D78 /* ExtraIncomeVC.swift in Sources */,
-				33FDDFD91EF335F6008FBD23 /* GoalMO+CoreDataClass.swift in Sources */,
-				33242C381EF3F63C00973D78 /* JTCalendarWeekDayView.m in Sources */,
-				33FDDFD31EF335F6008FBD23 /* ExpenseCell.swift in Sources */,
-				33242C301EF3F63C00973D78 /* JTCalendarManager.m in Sources */,
-				33FDDFD11EF335F6008FBD23 /* AnalysisVC.swift in Sources */,
-				33FDDFE51EF335F6008FBD23 /* UserMO+CoreDataClass.swift in Sources */,
-				33FDDFD71EF335F6008FBD23 /* ExpenseVC.swift in Sources */,
-				33242C3B1EF3F63C00973D78 /* JTVerticalCalendarView.m in Sources */,
-				33FDDFDE1EF335F6008FBD23 /* IncomeMO+CoreDataProperties.swift in Sources */,
-				33242C321EF3F63C00973D78 /* JTDateHelper.m in Sources */,
-				33FDDFD01EF335F6008FBD23 /* AddIncomeViewController.swift in Sources */,
-				33FDDFE01EF335F6008FBD23 /* MainViewController.swift in Sources */,
-				33FDDFE31EF335F6008FBD23 /* StartingInfo.swift in Sources */,
-				33242C351EF3F63C00973D78 /* JTCalendarDayView.m in Sources */,
-				33242C371EF3F63C00973D78 /* JTCalendarPageView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33FDDF8A1EF334FE008FBD23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33FDDF931EF334FE008FBD23 /* ThriftyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33FDDF951EF334FE008FBD23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33FDDF9E1EF334FE008FBD23 /* ThriftyUITests.swift in Sources */,
+				E41777DE1EF86C9300364981 /* FundsTVCell.swift in Sources */,
+				E41777E21EF8886B00364981 /* FundDetailVC.swift in Sources */,
+				F61D80751EF1E8BB006B6B1D /* UserMO+CoreDataProperties.swift in Sources */,
+				33AD8A2A1EFA61B000E13895 /* JTCalendarPageView.m in Sources */,
+				F6FCD03A1EF9CA67007CC4C7 /* AnalysisDateVC.swift in Sources */,
+				E4D970061EEB210D0030BF2A /* BudgetViewController.swift in Sources */,
+				33AD8A2E1EFA61B000E13895 /* JTVerticalCalendarView.m in Sources */,
+				33AD8A231EFA61B000E13895 /* JTCalendarManager.m in Sources */,
+				E41D78831EEF8EBE000CC8B1 /* ExpenseVC.swift in Sources */,
+				E4D970111EEB62660030BF2A /* MainViewController.swift in Sources */,
+				F61D807F1EF2AA83006B6B1D /* AddTransaction.swift in Sources */,
+				33AD8A251EFA61B000E13895 /* JTDateHelper.m in Sources */,
+				F6375B141EF4D43D0019E2FC /* UserTable.swift in Sources */,
+				F61D807B1EF29A6F006B6B1D /* TransactionTable.swift in Sources */,
+				33AD8A281EFA61B000E13895 /* JTCalendarDayView.m in Sources */,
+				E41777DB1EF8649B00364981 /* FundsTVC.swift in Sources */,
+				E4F8A3961EF20FAB00CBCCB2 /* AnalysisVC.swift in Sources */,
+				33AD8A291EFA61B000E13895 /* JTCalendarMenuView.m in Sources */,
+				E4F8A3911EF1EA3300CBCCB2 /* HistoryObjC.m in Sources */,
+				E41777E41EF8B84600364981 /* PieTableVC.swift in Sources */,
+				33AD8A241EFA61B000E13895 /* JTCalendarSettings.m in Sources */,
+				E4D970041EEB20630030BF2A /* SetSavingsViewController.swift in Sources */,
+				33AD8A2B1EFA61B000E13895 /* JTCalendarWeekDayView.m in Sources */,
+				F6A088631EF8C48600543EAF /* LineChartVC.swift in Sources */,
+				E4D96FEB1EEB15700030BF2A /* AppDelegate.swift in Sources */,
+				33AD8A261EFA61B000E13895 /* JTCalendarDelegateManager.m in Sources */,
+				E4D970081EEB229C0030BF2A /* StartingInfo.swift in Sources */,
+				33AD8A2D1EFA61B000E13895 /* JTHorizontalCalendarView.m in Sources */,
+				F660B9291EF87C80007B08AA /* TransactionContainer.swift in Sources */,
+				33AD89FE1EFA608000E13895 /* HistoryVC.swift in Sources */,
+				33AD8A2C1EFA61B000E13895 /* JTCalendarWeekView.m in Sources */,
+				F6A088641EF8C49000543EAF /* PieChartVC.swift in Sources */,
+				F61D80741EF1E8BB006B6B1D /* UserMO+CoreDataClass.swift in Sources */,
+				F6F1B9F81EF389CB003C83BE /* TransactionMO+CoreDataClass.swift in Sources */,
+				E41777E01EF886B300364981 /* FundsAddVC.swift in Sources */,
+				E4C6F3DF1EF4A79900CD2C75 /* NSDate.swift in Sources */,
+				E4D970001EEB1AEC0030BF2A /* SetBBViewController.swift in Sources */,
+				E4D96FF31EEB15700030BF2A /* Thrifty.xcdatamodeld in Sources */,
+				F61D807D1EF29D25006B6B1D /* IncomeCell.swift in Sources */,
+				F6F1B9F91EF389CB003C83BE /* TransactionMO+CoreDataProperties.swift in Sources */,
+				F61D80811EF301E2006B6B1D /* NameVC.swift in Sources */,
+				33AD8A271EFA61B000E13895 /* JTCalendarScrollManager.m in Sources */,
+				F6375B161EF4D5400019E2FC /* UserCell.swift in Sources */,
+				33AD89FD1EFA608000E13895 /* HistoryCell.swift in Sources */,
+				E41777E61EF8B86100364981 /* LineTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		33FDDF901EF334FE008FBD23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 33FDDF761EF334FE008FBD23 /* Thrifty */;
-			targetProxy = 33FDDF8F1EF334FE008FBD23 /* PBXContainerItemProxy */;
-		};
-		33FDDF9B1EF334FE008FBD23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 33FDDF761EF334FE008FBD23 /* Thrifty */;
-			targetProxy = 33FDDF9A1EF334FE008FBD23 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		33FDDFAD1EF335F6008FBD23 /* LaunchScreen.storyboard */ = {
+		E4D96FEE1EEB15700030BF2A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				33FDDFAE1EF335F6008FBD23 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = Base.lproj;
-			sourceTree = "<group>";
-		};
-		33FDDFAF1EF335F6008FBD23 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				33FDDFB01EF335F6008FBD23 /* Base */,
+				E4D96FEF1EEB15700030BF2A /* Base */,
 			);
 			name = Main.storyboard;
-			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		E4D96FF61EEB15700030BF2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D96FF71EEB15700030BF2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		33FDDFA01EF334FE008FBD23 /* Debug */ = {
+		E4D96FFA1EEB15700030BF2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -811,11 +562,10 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		33FDDFA11EF334FE008FBD23 /* Release */ = {
+		E4D96FFB1EEB15700030BF2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -854,137 +604,60 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		33FDDFA31EF334FE008FBD23 /* Debug */ = {
+		E4D96FFD1EEB15700030BF2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E0ED9C5A033CF5F2BA4AD90 /* Pods-Thrifty.debug.xcconfig */;
+			baseConfigurationReference = 19A50D7C45845FCB980B286F /* Pods-Thrifty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = R2T7M4F5P6;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Thrifty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LPTech.Thrifty;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.rlu.Thrifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/homeworkaccount/Documents/Thrifty?/Thrifty/Thrifty-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thrifty/Thrifty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		33FDDFA41EF334FE008FBD23 /* Release */ = {
+		E4D96FFE1EEB15700030BF2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AF1C657EE7976037D21114C /* Pods-Thrifty.release.xcconfig */;
+			baseConfigurationReference = 2644817BCBEC393FDD8B4D04 /* Pods-Thrifty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = R2T7M4F5P6;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Thrifty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LPTech.Thrifty;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.deanza.rlu.Thrifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/homeworkaccount/Documents/Thrifty?/Thrifty/Thrifty-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thrifty/Thrifty-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		33FDDFA61EF334FE008FBD23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D9A85EA5B824DF434005660 /* Pods-ThriftyTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ThriftyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LPTech.ThriftyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thrifty.app/Thrifty";
-			};
-			name = Debug;
-		};
-		33FDDFA71EF334FE008FBD23 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8603FB3A946B94A582A22D6 /* Pods-ThriftyTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ThriftyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LPTech.ThriftyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thrifty.app/Thrifty";
-			};
-			name = Release;
-		};
-		33FDDFA91EF334FE008FBD23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F084DC0DF5F373D5D53B6B0 /* Pods-ThriftyUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ThriftyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LPTech.ThriftyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Thrifty;
-			};
-			name = Debug;
-		};
-		33FDDFAA1EF334FE008FBD23 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3041AD0ACD372E9EB6372270 /* Pods-ThriftyUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = ThriftyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LPTech.ThriftyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Thrifty;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33FDDF721EF334FE008FBD23 /* Build configuration list for PBXProject "Thrifty" */ = {
+		E4D96FE21EEB15700030BF2A /* Build configuration list for PBXProject "Thrifty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33FDDFA01EF334FE008FBD23 /* Debug */,
-				33FDDFA11EF334FE008FBD23 /* Release */,
+				E4D96FFA1EEB15700030BF2A /* Debug */,
+				E4D96FFB1EEB15700030BF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33FDDFA21EF334FE008FBD23 /* Build configuration list for PBXNativeTarget "Thrifty" */ = {
+		E4D96FFC1EEB15700030BF2A /* Build configuration list for PBXNativeTarget "Thrifty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33FDDFA31EF334FE008FBD23 /* Debug */,
-				33FDDFA41EF334FE008FBD23 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		33FDDFA51EF334FE008FBD23 /* Build configuration list for PBXNativeTarget "ThriftyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33FDDFA61EF334FE008FBD23 /* Debug */,
-				33FDDFA71EF334FE008FBD23 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		33FDDFA81EF334FE008FBD23 /* Build configuration list for PBXNativeTarget "ThriftyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33FDDFA91EF334FE008FBD23 /* Debug */,
-				33FDDFAA1EF334FE008FBD23 /* Release */,
+				E4D96FFD1EEB15700030BF2A /* Debug */,
+				E4D96FFE1EEB15700030BF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -992,17 +665,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		33FDDFEB1EF33737008FBD23 /* Thrifty.xcdatamodeld */ = {
+		E4D96FF11EEB15700030BF2A /* Thrifty.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				33FDDFEC1EF33737008FBD23 /* Thrifty.xcdatamodel */,
+				E4D96FF21EEB15700030BF2A /* Thrifty.xcdatamodel */,
 			);
-			currentVersion = 33FDDFEC1EF33737008FBD23 /* Thrifty.xcdatamodel */;
+			currentVersion = E4D96FF21EEB15700030BF2A /* Thrifty.xcdatamodel */;
 			path = Thrifty.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 33FDDF6F1EF334FE008FBD23 /* Project object */;
+	rootObject = E4D96FDF1EEB15700030BF2A /* Project object */;
 }

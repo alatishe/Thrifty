@@ -14,30 +14,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ThriftyTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-ThriftyUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1BB7C4EA1822C22048A24D759BE1137C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>70F2D4A9AB166AE5034FBC8C526D9249</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C5BC3303622ABEB660DEEC3F1A3CA344</key>
 		<dict>
 			<key>primary</key>
 			<true/>

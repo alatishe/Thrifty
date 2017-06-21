@@ -11,11 +11,19 @@ import CoreData
 
 class ExpenseVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    
+    @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet var inputExpense: UITextField!
     @IBOutlet var typeOfExpense: UIPickerView!
-    var types : [String] = [String]()
-    var amountExpense : Double = 0.0
-    var typeSelectedIndex = 0
+    @IBOutlet weak var descrField: UITextField!
+    
+    var type: TransactionMO.type = TransactionMO.type.expense
+    
+    var selectedCategoryIndex = 0
+    
+    var categories: [String] = []
+    var amountExpense: Double = 0.0
+    var amountIncome: Double = 0.0
     
     override func viewDidLoad() {
         
@@ -24,8 +32,16 @@ class ExpenseVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         self.typeOfExpense.delegate = self
         self.typeOfExpense.dataSource = self
         
+        navBar.title = (type == TransactionMO.type.income ? "Receive Money" : "Spend Money")
         // Do any additional setup after loading the view.
-        types = ["General", "Food", "Transportation", "Shopping", "Groceries", "Entertainment", "Education", "Health", "Family"]
+        switch type {
+        case TransactionMO.type.income:
+            categories = ["General"]
+        case TransactionMO.type.expense:
+            categories = ["General", "Food", "Transportation", "Shopping", "Groceries", "Entertainment", "Education", "Health", "Family"]
+        default:
+            break
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,28 +56,57 @@ class ExpenseVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
     
     // The number of rows of data
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return types.count
+        return categories.count
     }
     
     // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return types[row]
-    }
-
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        typeSelectedIndex = row
+        return categories[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedCategoryIndex = row
+    }
+
     func getContext() -> NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }
     
-    func saveExpense() {
-        if types[typeSelectedIndex] != "" && amountExpense != 0 {
-            let expenseInfo = ExpenseInfo(id: UUID().uuidString, type: types[typeSelectedIndex], descr: "", amount: amountExpense, daysCycle: 0, date: NSDate(), spentBy: "default")
+    @IBAction func cancelClicked(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func DoneButtonClicked(_ sender: Any) {
+        
+        if (inputExpense.text != "") {
+            
+            let pickerindex = typeOfExpense.selectedRow(inComponent: 0).description
+            let category = categories[Int(pickerindex)!]
+            var amount = Double(inputExpense.text!)!
+            
+            if type == TransactionMO.type.expense {
+                amount = -amount
+            }
+
+            let newExpense = TransactionInfo(daysCycle: 0,
+                                             amount: amount,
+                                             date: Date() as NSDate,
+                                             descr: descrField.text!,
+                                             id: UUID().uuidString,
+                                             type: type.rawValue,
+                                             amountSoFar: Double(inputExpense.text!)!,
+                                             category: category)
+     
             let context = getContext()
-            _ = ExpenseMO.expenseWithInfo(expenseInfo, inMOContext: context)
+            _ = UserMO.getActiveUser(context)?.createNewTransaction(with: newExpense, in: context)
+
+            self.dismiss(animated: true, completion: nil)
+        }
+        else {
+            let dataAlert = UIAlertController(title: "Error", message: "Enter an expense amount", preferredStyle: UIAlertControllerStyle.alert)
+            dataAlert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(dataAlert, animated: true, completion: nil)
         }
     }
     
@@ -74,7 +119,6 @@ class ExpenseVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         if segue.identifier == "saveExpense"
         {
             amountExpense = (inputExpense.text! as NSString).doubleValue
-            saveExpense()
         }
     }
 

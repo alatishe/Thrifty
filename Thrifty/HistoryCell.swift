@@ -2,8 +2,8 @@
 //  HistoryCell.swift
 //  Thrifty
 //
-//  Created by Manny Luu on 16/19/17.
-//  Copyright © 2017 DeAnza. All rights reserved.
+//  Created by Lomesh Pansuriya on 16/06/17.
+//  Copyright © 2017 Lomesh Pansuriya. All rights reserved.
 //
 
 import UIKit
@@ -28,37 +28,49 @@ class HistoryCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    var expenseMO = [ExpenseMO]() {
+    var transactionMO = [TransactionMO]() {
         didSet{
-            if expenseMO.count > 0 {
-                if let date = expenseMO[0].date as Date? {
+            if transactionMO.count > 0 {
+                if let date = transactionMO[0].date as Date? {
                     lblDate.text = date.getStringWithFormat("dd/mm/yy EEEE")
                 }
                 
                 lblDailyBudget.text = "Daily Budget"
-                lblDailyBudgetAmount.text = "$24"
+                let dailyBudgetAmount = 24.00
+                lblDailyBudgetAmount.text = "$\(dailyBudgetAmount)"
                 
-                var typeString = ""
-                var moneyString = ""
+                var categoryString = ""
+                var amountString = ""
                 var totalExpense = 0.00
-                for expense in expenseMO {
-                    if let type = expense.type {
-                        if typeString.isEmpty {
-                            typeString = typeString + "\(type)"
+                for expense in transactionMO {
+                    if let category = expense.category {
+                        if categoryString.isEmpty {
+                            categoryString = categoryString + "\(category)"
                         } else {
-                            typeString = typeString + "\n\(type)"
+                            categoryString = categoryString + "\n\(category)"
                         }
                     }
-                    if moneyString.isEmpty {
-                         moneyString = moneyString + "$\(expense.amount)"
+                    let aString = "\(expense.amount)"
+                    let newString = aString.replacingOccurrences(of: "-", with: "", options: .literal, range: nil)
+                    
+                    if amountString.isEmpty {
+                         amountString = amountString + "-$\(newString)"
                     } else {
-                         moneyString = moneyString + "\n$\(expense.amount)"
+                         amountString = amountString + "\n-$\(newString)"
                     }
-                    totalExpense = totalExpense + expense.amount
+                    if let amount = Double(newString) {
+                        totalExpense = totalExpense + amount
+                    }
                 }
-                lblType.text = typeString
-                lblTypeAmount.text = moneyString
-                lblTotal.text = "$\(totalExpense - 24.0)"
+                lblType.text = categoryString
+                lblTypeAmount.text = amountString
+                if (totalExpense - dailyBudgetAmount) < dailyBudgetAmount {
+                    lblTotal.text = "$\(totalExpense - dailyBudgetAmount)"
+                    lblTotal.textColor = UIColor.green
+                } else {
+                    lblTotal.text = "-$\(totalExpense - dailyBudgetAmount)"
+                    lblTotal.textColor = UIColor.red
+                }
             }
         }
     }

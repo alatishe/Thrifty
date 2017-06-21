@@ -4,19 +4,7 @@
 target 'Thrifty' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+	pod ‘Charts'
   # Pods for Thrifty
-
-  pod ‘Charts'
-
-  target 'ThriftyTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ThriftyUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

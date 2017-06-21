@@ -2,8 +2,8 @@
 //  HistoryVC.swift
 //  Thrifty
 //
-//  Created by Manny Luu on 16/19/17.
-//  Copyright © 2017 DeAnza. All rights reserved.
+//  Created by Lomesh Pansuriya on 16/06/17.
+//  Copyright © 2017 Lomesh Pansuriya. All rights reserved.
 //
 
 import UIKit
@@ -40,7 +40,7 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
     
     var calendarManager = JTCalendarManager()
 
-    var expenseList: [ExpenseMO] = [ExpenseMO]()
+    var expenseList: [TransactionMO] = [TransactionMO]()
     
     var dateSelected = Date()
     
@@ -190,7 +190,7 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
 
     
     func haveEventForDay(date: NSDate) -> Bool {
-        if ExpenseMO.expenseAvailabel(date: date as Date, inMOContext: getContext()) {
+        if TransactionMO.expenseAvailabel(date: date as Date, inMOContext: getContext()) {
             return true
         }
         return false
@@ -209,7 +209,7 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
     
     func loadData(_ date: Date) {
         expenseList.removeAll()
-        expenseList = ExpenseMO.expenseWithDate(date, inMOContext: getContext())!
+        expenseList = TransactionMO.expenseWithDate(date, inMOContext: getContext())!
         self.tableView.reloadData()
     }
     
@@ -235,7 +235,7 @@ class HistoryVC: UIViewController, JTCalendarDelegate, UITableViewDelegate, UITa
         
         let historyCell = self.tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! HistoryCell
         
-        historyCell.expenseMO = expenseList
+        historyCell.transactionMO = expenseList
         
         return historyCell
     }
